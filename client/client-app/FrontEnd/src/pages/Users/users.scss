@@ -1,0 +1,108 @@
+$mainFont: "Montserrat", sans-serif;
+$commonText: #ffffff;
+.pagination_numbers {
+  span {
+    display: inline-block;
+    font-family: $mainFont;
+    font-size: 16px;
+    height: 48px;
+    width: 48px;
+    border: 2px solid #f1f1f1;
+    padding: 8px;
+    border-radius: 8px;
+    color: #1a1a1a;
+    text-align: center;
+  }
+}
+.selected-Page {
+  font-family: $mainFont;
+  font-size: 16px;
+  color: #1a1a1a;
+  background-color: #3a80ba;
+  border: 2px solid #3a80ba;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  & h:first-child {
+    padding-right: 24px;
+  }
+  & h:last-child {
+    padding-left: 24px;
+  }
+  & img {
+    height: 12px;
+  }
+}
+
+.footer-users {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &_logo {
+    font-size: 24px;
+    font-family: $mainFont;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: white;
+  }
+  &_rights,
+  &_copyrights {
+    color: white;
+    font-size: 16px;
+    line-height: 23px;
+    font-family: $mainFont;
+  }
+  width: 100%;
+  background-color: #1c3b55;
+  height: 57px;
+}
+
+@media screen and (min-width: 320px) {
+  .size-loader {
+    height: 15px;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .body-user {
+    margin-top: 24px;
+    &__title {
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 1199px;
+    width: 100vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100vw;
+    max-width: 1400px;
+    height: auto;
+  }
+}
